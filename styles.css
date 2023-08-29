@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  background-color: gray;
+  font-size: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+input {
+  font-size: 1.5rem;
+  border: none;
+  outline: none;
+}
+
+.container {
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.prev-prize__title {
+  padding: 2rem 0 1rem 0;
+}
+
+.content__container {
+  box-sizing: content-box;
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.wheel__container {
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.wheel-arrow {
+  position: absolute;
+  z-index: 10;
+  top: -10px;
+  height: 60px;
+  width: 60px;
+}
+
+.wheel {
+  width: 500px;
+  height: 500px;
+  margin-bottom: 2rem;
+}
+
+.options__container {
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  min-width: 300px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  padding: 20px 0;
+}
+
+.options {
+  margin: 1.5rem 0;
+  height: 100%;
+  width: 70%;
+  overflow: auto;
+}
+
+ul.options > li {
+  width: 100%;
+  display: flex;
+}
+
+ul.options > li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.text-card {
+  width: 100%;
+  height: 1.8rem;
+  padding: 8px 20px;
+  border-radius: 100px;
+  text-align: center;
+  font-weight: bold;
+  background-color: rgb(223, 223, 223);
+}
+
+ul.options > li > button {
+  color: red;
+  font-size: 1rem;
+}
+
+#prevPrize {
+  font-weight: bold;
+  font-size: larger;
+  color: rgb(198, 44, 44);
+}
+
+.input-btn:hover {
+  cursor: pointer;
+}
+
+.input-btn {
+  padding: 10px 60px;
+  border-radius: 100px;
+  font-size: larger;
+  background-color: rgb(223, 223, 223);
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 0.9rem;
+  }
+
+  .container {
+    height: auto;
+    padding: 0 2rem;
+  }
+
+  .content__container {
+    flex-direction: column;
+    height: fit-content;
+  }
+
+  .wheel {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 1rem;
+  }
+
+  .wheel-arrow {
+    top: -5px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .text-card {
+    height: 1rem;
+  }
+}

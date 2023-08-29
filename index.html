@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Fortune wheel</title>
+  </head>
+  <body onload="init()">
+    <div class="container">
+      <div class="prev-prize__title">
+        Previous prize:
+        <span id="prevPrize"></span>
+      </div>
+      <div class="content__container">
+        <div class="wheel__container">
+          <canvas class="wheel-arrow" height="60px" width="60px"></canvas>
+          <canvas class="wheel" height="500px" width="500px"></canvas>
+          <input class="input-btn" type="button" value="Spin" onclick="spin()"></input>
+        </div>
+        <div class="options__container">
+          <div style="font-size: larger;">Options</div>
+          <ul class="options"></ul>
+          <input class="input-btn" id="addOptionBtn" type="button" value="Add option" onclick="addEmptyOption()"></input>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="script.js"></script>
+</html>
